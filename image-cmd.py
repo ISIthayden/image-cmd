@@ -9,8 +9,7 @@ import os
 import random
 import subprocess
 
-print("Please enter a website to obtain images from:\n")
-url = input('')
+url = input("Please enter a website to obtain images from:\n")
 
 subprocess.call(['/usr/bin/image-scraper','-s images','-m 10',url])
 
