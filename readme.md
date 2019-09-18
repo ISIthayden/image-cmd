@@ -18,7 +18,9 @@ Teaches: git, loosely defined technical project, http crawling, unix executables
 
 # instructions:
 
-1) download image-cmd.py script and store it in an empty working directory
-2) using a terminal, navigate to the directory you have stored image-cmd.py in
-3) type 'python image-cmd.py' into the command line
-4) a url will be requested from the user, and the output will be provided in the terminalfs
+1) install python 3.4 or greater (if not already installed) - https://realpython.com/installing-python/
+2) install imagescraper on the command line, typing: pip install ImageScraper
+3) download image-cmd.py script and store it in an empty working directory
+4) using a terminal, navigate to the directory you have stored image-cmd.py in
+5) type 'python image-cmd.py' into the command line
+6) a url will be requested from the user, and the output will be provided in the terminal
