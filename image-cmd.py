@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # image-cmd scans web pages for images and displays them in a terminal
 # web scraper command line tool with image viewer, time limited
 # tool is called from the command line and does this:
@@ -6,7 +8,6 @@
 #- displays that image to the terminal using shitty color terminal graphics
 
 import os
-import sys
 import shutil
 import random
 import subprocess
@@ -23,4 +24,5 @@ filePath = '/home/tony/image-cmd/ images/' + (random.choice(os.listdir('/home/to
 # draw the image to the command line, using viu, passing it the path of the selected image
 subprocess.call(['/usr/bin/viu', filePath])
 
+# delete images directory
 shutil.rmtree("images", ignore_errors=True, onerror=None)
