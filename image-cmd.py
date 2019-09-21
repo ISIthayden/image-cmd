@@ -16,13 +16,14 @@ import subprocess
 url = input("Please enter a website to obtain images from:\n")
 
 # call image-scraper and pass it the url, saving images in a new directory
-subprocess.call(['/usr/bin/image-scraper','-s images','-m 10',url])
+subprocess.call(['/usr/bin/bin/image-scraper','-s images','-m 10',url])
 
 # randomly select a file within the images directory and assign its path to a variable
-filePath = '/home/tony/image-cmd/ images/' + (random.choice(os.listdir('/home/tony/image-cmd/ images')))
+path = ' images/'
+filePath = path + (random.choice(os.listdir(path)))
 
 # draw the image to the command line, using viu, passing it the path of the selected image
-subprocess.call(['/usr/bin/viu', filePath])
+subprocess.call(['viu', filePath])
 
 # delete images directory
-shutil.rmtree("images", ignore_errors=True, onerror=None)
+shutil.rmtree(" images", ignore_errors=True, onerror=None)
